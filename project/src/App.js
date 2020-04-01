@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <Navigation/>
+      
       <Route path="/" exact component={Home}></Route>
       <Route path="/Progress-Feed" component={Feed}></Route>
       <Route path="/Project-History" component={PHistory}></Route>
