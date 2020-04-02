@@ -4,12 +4,18 @@ import { Link } from 'react-router-dom';
 // style 
 import '../styles/Nav.css';
 
+// image 
+import Logo from '../images/bowdoin-logo.png'
+
 function Navigation() {
     return (
         <div id="nav-container">
-            <h2>Project Name</h2>
+            <div id="title-container">
+                <img src={Logo} alt="The word Bowdoin in white text on a black background"/>
+                <h2>Project Name</h2>
+            </div>
 
-            <div className="link-container">
+            <div id="link-container">
                 <div className="link-box">
                     <Link to='/' className="link">Home</Link>
                 </div>

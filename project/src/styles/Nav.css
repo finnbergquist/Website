@@ -4,10 +4,23 @@
     justify-content: space-between;
     background-color: black;
     color: white;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 
-.link-container {
+#title-container {
+    /* border: 1px solid red; */
+    display: flex; 
+    flex-direction: row;
+    width: 50%; 
+}
+
+img {
+    /* border: 1px solid red;  */
+    height: 70px; 
+    margin-right: 10px;
+}
+
+#link-container {
     /* border: 1px solid red;  */
     display: flex;
     flex-direction: row;
