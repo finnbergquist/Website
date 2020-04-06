@@ -1,56 +1,3 @@
-#nav-container {
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: black;
-    color: white;
-    /* padding-left: 20px; */
-}
-
-#title-container {
-    /* border: 1px solid red; */
-    display: flex; 
-    flex-direction: row;
-    width: 50%; 
-}
-
-img {
-    /* border: 1px solid red;  */
-    height: 70px; 
-    margin-right: 10px;
-}
-
-#link-container {
-    /* border: 1px solid red;  */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 40%; 
-}
-
-.link-box{
-    /* border: 1px solid green; */
-    margin: auto;
-    width: 25%;
-}
-
-.link {
-    /* border: 1px solid orange;   */
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-}
-
-.link:hover {
-    color: darken("white", 50%); 
-    font-size: 25px;
-}
-
-.link-box:nth-last-child(3) {
-    /* text-align: left; */
-    width: 35%;
-}
-
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
 
 body {
@@ -178,4 +125,57 @@ body {
     text-transform: uppercase;
     color: #a5a5a5;
     letter-spacing: 1px;
+}
+
+#nav-container {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    /* padding-left: 20px; */
+}
+
+#title-container {
+    /* border: 1px solid red; */
+    display: flex; 
+    flex-direction: row;
+    width: 50%; 
+}
+
+img {
+    /* border: 1px solid red;  */
+    height: 70px; 
+    margin-right: 10px;
+}
+
+#link-container {
+    /* border: 1px solid red;  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%; 
+}
+
+.link-box{
+    /* border: 1px solid green; */
+    margin: auto;
+    width: 25%;
+}
+
+.link {
+    /* border: 1px solid orange;   */
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.link:hover {
+    color: darken("white", 50%); 
+    font-size: 25px;
+}
+
+.link-box:nth-last-child(3) {
+    /* text-align: left; */
+    width: 35%;
 }
