@@ -12,7 +12,7 @@ function Navigation() {
         <div id="nav-container">
             <div id="title-container">
                 <img src={Logo} alt="The word Bowdoin in white text on a black background"/>
-                <h2>Project Name</h2>
+                <h2>CSCI 2345 Project</h2>
             </div>
 
             <div id="link-container">
