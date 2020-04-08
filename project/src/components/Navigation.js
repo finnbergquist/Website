@@ -20,7 +20,7 @@ function Navigation() {
                     <Link to='/' className="link">Home</Link>
                 </div>
                 <div className="link-box">
-                    <Link to='/Progress-Feed' className="link">Progress Feed</Link>
+                    <Link to='/Progress-Feed' className="link">Database</Link>
                 </div>
                 <div className="link-box">
                     <Link to='/Project-History' className="link">History</Link>
