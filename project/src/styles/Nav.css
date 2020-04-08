@@ -30,8 +30,10 @@ img {
 
 .link-box{
     /* border: 1px solid green; */
+    display: flex;
     margin: auto;
     width: 25%;
+    height: 100%;
 }
 
 .link {
@@ -39,6 +41,8 @@ img {
     text-decoration: none;
     font-size: 20px;
     color: white;
+    margin: auto;
+    text-align: center;
 }
 
 .link:hover {
@@ -49,4 +53,8 @@ img {
 .link-box:nth-last-child(3) {
     /* text-align: left; */
     width: 35%;
+}
+
+.link-box:hover {
+    background-color: #575757;
 }
