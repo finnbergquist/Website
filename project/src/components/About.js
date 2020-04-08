@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import '../styles/about.css';
 
 // image 
-import Logo from '../images/bowdoin-logo.png'
 import StacyDoore from '../images/meet-the-team/10201229.png'
 import EmmeMcCabe from '../images/meet-the-team/18535669.png'
 
@@ -23,7 +22,7 @@ function About() {
             <div class="col-md-4 col-sm-4">
                 <div class="team-member">
                     <div class="team-img">
-                        <img src={StacyDoore}></img>
+                        <img src={StacyDoore} alt="Stacy Doore"></img>
                     <div class="team-hover">
                         <div class="desk">
                         <h4><Link to='https://www.bowdoin.edu/profiles/faculty/sdoore/index.html' className="link">Prof. Stacy Doore</Link></h4>
@@ -37,7 +36,7 @@ function About() {
             <div class="col-md-4 col-sm-4">
                 <div class="team-member">
                     <div class="team-img">
-                        <img src={EmmeMcCabe}></img>
+                        <img src={EmmeMcCabe} alt="Emme McCabe"></img>
                     <div class="team-hover">
                         <div class="desk">
                         <h4><Link to='https://www.github.com/emmemccabe' className="link">Emme McCabe '20</Link></h4>
