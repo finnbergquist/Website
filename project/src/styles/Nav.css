@@ -45,10 +45,6 @@ img {
     text-align: center;
 }
 
-.link-box:hover {
-    background-color: #575757;
-}
-
 .link:hover {
     color: darken("white", 50%); 
     font-size: 25px;
@@ -57,4 +53,8 @@ img {
 .link-box:nth-last-child(3) {
     /* text-align: left; */
     width: 35%;
+}
+
+.link-box:hover {
+    background-color: #575757;
 }
