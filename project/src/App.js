@@ -21,9 +21,9 @@ function App() {
       <Route path="/Project-History" component={PHistory}></Route>
       <Route path="/About" component={About}></Route>
       <Route path="/Art-Collection" component={ArtList}></Route>
+      <Route path="/Admin" exact component={AdminHome}></Route>
       <Route path="/Admin/Login" component={Login}></Route>
       <Route path="/Admin/Register" component={SignUp}></Route>
-      <Route path="/Admin" exact component={AdminHome}></Route>
     </div>
   );
 }
