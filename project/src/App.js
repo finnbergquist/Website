@@ -7,8 +7,9 @@ import PHistory from './components/History';
 import About from './components/About'; 
 import Navigation from './components/Navigation';
 import ArtList from './components/ArtList';
-import Login from './components/Login';
-import SignUp from './components/SignUp';
+import Login from './components/admin/Login';
+import SignUp from './components/admin/SignUp';
+import AdminHome from './components/admin/AdminHome';
 
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
       <Route path="/Project-History" component={PHistory}></Route>
       <Route path="/About" component={About}></Route>
       <Route path="/Art-Collection" component={ArtList}></Route>
-      <Route path="/Login" component={Login}></Route>
-      <Route path="/Register" component={SignUp}></Route>
+      <Route path="/Admin" exact component={AdminHome}></Route>
+      <Route path="/Admin/Login" component={Login}></Route>
+      <Route path="/Admin/Register" component={SignUp}></Route>
     </div>
   );
 }

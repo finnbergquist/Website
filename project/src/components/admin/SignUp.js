@@ -68,7 +68,7 @@ const SignUp = withFormik({
     }),
     
     // update values and set status 
-    handleSubmit(values, { resetForm, props}) {
+    handleSubmit(values, { resetForm, props }) {
         // console.log("values, props", values, props)
         
         axios
