@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; 
 import ArtCard from './ArtCard';
+import ArtImgs from '../images/artwork/index.js';
 
 function ArtList() {
 
@@ -10,7 +11,7 @@ function ArtList() {
     useEffect(() => {
         const getArtData = () => {
             axios
-                .get('https://artmuseumdraft.herokuapp.com/art/all')
+                .get('https://artmuseumdraft.herokuapp.com/art')
                 .then(response => {
                     // successful 
                     console.log("Art data response", response.data)
@@ -30,10 +31,14 @@ function ArtList() {
     
 
     return (
-        <section>
-            {art.map(artwork => {   
-                // create a art card for each artwork 
-                return <ArtCard art = {artwork} key = {art.id}/>
+        <section id="art-list-container">
+            {art.map(artwork => {    
+                
+                // find correct image 
+                let photo = ArtImgs.filter(image => image.id === parseInt(artwork.id))
+                
+                // create an art card for each artwork 
+                return <ArtCard art={artwork} photo={photo[0].img} key={art.accession_number}/>
             })}
         </section>
     );
