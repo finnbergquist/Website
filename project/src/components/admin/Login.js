@@ -80,7 +80,7 @@ const Login = withFormik({
                 
                 localStorage.setItem('token', response.data.token);
 
-                props.history.push('/')
+                props.history.push('/Admin')
             }) 
     
             .catch(error => {
